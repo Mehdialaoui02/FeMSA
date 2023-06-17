@@ -38,10 +38,22 @@
 
 
 /*** Logo ***/
-nav #logo {
-    height: 150px;
-}
-
+.logo-img {
+    height: auto;
+    width: 100%;
+    max-height: 100px; /* Adjust the height as needed */
+    max-width: 100%; /* Adjust the width as needed */
+  }
+  
+  @media (min-width: 1000px) and (max-width: 1400px) {
+    .logo-img {
+      max-height: 100px; /* Adjust the height as needed */
+      max-width: 80%; /* Adjust the width as needed */
+    }
+  }
+  
+  
+  
 /*** mehdi ***/
 .flex-container {
     display: flex;
@@ -61,6 +73,20 @@ nav #logo {
     height: 250px;
     width: 250px;
   }
+
+  .logo-container {
+    flex-shrink: 0; /* Prevent the logo container from shrinking */
+    min-width: 200px; /* Set a minimum width for the logo container */
+}
+
+@media (max-width: 1200px) {
+    .navbar-expand {
+      flex-flow: row wrap;
+      justify-content: center;
+    }
+  }
+  
+
 
 /*** hamma ***/
 .team-container {
